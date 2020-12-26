@@ -1,34 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt">
   <head>
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+    <link href="reset.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="animista.css"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700|Playfair+Display" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e0c4c5addb.js" crossorigin="anonymous"></script>
-    <link href="style.css" rel="stylesheet">
-    <script src="main.js"></script> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400;1,900&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">     <script src="https://kit.fontawesome.com/e0c4c5addb.js" crossorigin="anonymous"></script>
     <title>Lucas Forato</title>
   </head>
-  <body>
+  <body id="everything">
     <header>
-        <div class="background-image">
-            <img src="images/header-img.png" alt="">
-        </div>
+      <div class="slider">
         <div class="text">
-            <h1>Olá, eu sou o Lucas</h1>
-            <p class="puff-in-right">Quer trabalhar comigo? Clique no botão e vamos conversar</p>
+          <h1 class="slide-in-left">Olá, eu sou o Lucas</h1>
+          <p class="slide-in-left">Você quer trabalhar comigo? Clique no botão e vamos conversar</p>
+
+              <div id="btn-div" class="button">
+                <button class="btn" id="btn">Clique Aqui  <i class="fab fa-whatsapp"></i></button>
+              </div>
+            
         </div>
-        <div class="button">
-            <button id="btn" class="bounce-in-bottom">Clique Aqui<i id="icon" class="fab fa-whatsapp"></i></button>
+        <div class="image">
+            <img class="slide-in-fwd-center" src="images/Image.png" alt="">
         </div>
+      </div>
     </header>
-    <main id="hover">
-      <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div>
-        <img src="images/Lucas.png" alt="">
-      </div>
+    <main id="main">
+        <div class='container-about'>
+            <div class="image-about">
+                <img src="images/Lucas.png" alt="">
+            </div>
+            <div class="text-about">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+            </div>
+        </div>
     </main>
+    <section class="skills">
+      <div class="skill-item">
+        <i class="fab fa-bootstrap"></i>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-html5"></i>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-css3-alt"></i>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-react"></i>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-wordpress-simple"></i>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-js-square"></i>
+      </div>
+    </section>
+    <section class="portifolio">
+      <div class="portifolio-item">
+        <div class="portifolio-img">
+          <img src="images/gray.png" alt="">
+        </div>
+        <div class="portifolio-txt">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+      </div>
+
+      <div class="portifolio-item">
+        <div class="portifolio-img">
+          <img src="images/gray.png" alt="">
+        </div>
+        <div class="portifolio-txt">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+      </div>
+
+      <div class="portifolio-item">
+        <div class="portifolio-img">
+          <img src="images/gray.png" alt="">
+        </div>
+        <div class="portifolio-txt">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <script src="main.js"></script> 
+
+    </footer>
   </body>
 </html>

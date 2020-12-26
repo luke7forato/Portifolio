@@ -1,0 +1,222 @@
+html {
+    font-size: 16px;
+}
+
+header {
+    background-color: #236DD8;
+    height: 52vw;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slider .text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vw;
+    font-weight: 500;
+    color: white;
+}
+
+.slider .text p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5vw;
+    color: white;
+    margin-top: 1.5vw;
+}
+
+.slider .button {
+    margin-top: 1.5vw;
+
+}
+
+.slider .button .button-side {
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    font-size: 1.7vw;
+    color: white;
+    background-color: #FF004D;
+    border: none;
+    top: 90%;
+    left: 93%;
+    border-radius: 50px;
+    width: 4vw;
+    height: 4vw;
+    animation: unset;
+    
+}
+
+
+.slider .button .btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7vw;
+    color: white;
+    background-color: #FF004D;
+    border: none;
+    top: 1%;
+    left: 2%;
+    border-radius: 50px;
+    width: 19vw;
+    height: 4vw;
+
+}
+  
+
+
+.slider .button button:hover {
+    border: 2px solid white;
+}
+
+.slider .button button:active {
+    background-color: #ffae00;
+    
+}
+
+.slider .image img {
+    width: 50vw;
+}
+
+
+main {
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3vw;
+}
+
+.container-about {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75vw;
+    height: 30vw;
+    border-radius: 20px;
+}
+
+.image-about img {
+    width: 25vw;
+    border-radius: 10px;
+    border: 3px white solid;
+}
+
+.text-about {
+    width: 35vw;
+    height: 80%;
+    line-height: 22px;
+    color: #272729;
+}
+
+.skills {
+    background-color: #236DD8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skills .skill-item {
+    padding: 1vw 0 1vw 0;
+}
+
+.skills .skill-item i {
+    font-size: 7vw;
+    background-color: #6788ff;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+
+}
+
+
+.portifolio {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    flex-flow: wrap;
+}
+
+.portifolio .portifolio-item {
+    width: 350px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.portifolio .portifolio-item .portifolio-txt {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.portifolio .portifolio-item .portifolio-txt p{
+    width: 90%;
+    padding-top: 20px;
+    line-height: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.portifolio .portifolio-item .portifolio-img img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+    .container-about {
+        justify-content: center;
+        flex-flow: column wrap;
+        height: auto;
+        width: auto;
+        padding: 25px;
+    }
+    
+    .image-about img {
+        width: 70vw;
+        border-radius: 10px;
+        border: 3px white solid;
+    }
+    
+    .text-about {
+        width: 65vw;
+        height: 80%;
+        margin-top: 10px;
+        line-height: 22px;
+        color: #272729;
+    }
+
+    .slider .button .button-side {
+        font-size: 2.3vw;
+        top: 92%;
+        left: 92%;
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .slider .button .btn {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vw;
+        color: white;
+        background-color: #FF004D;
+        border: none;
+        top: 10px;
+        left: 50px;
+        border-radius: 50px;
+        width: 20vw;
+        height: 5vw;
+    }
+
+
+}
+

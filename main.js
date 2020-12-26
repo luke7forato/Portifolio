@@ -1,29 +1,21 @@
-window.onscroll = function() {scrollOnce()};
+const doc = document.getElementById('everything');
 
 
-
-let scrolls = 0;
-
-
-function changeButtonRound() {
-    //add one to scroll
-
-    //deletes text button
-    const btn = document.getElementById('btn');
-    btn.innerHTML = '<button id="btn" class="make-button-round bounce-in-bottom"><i id="icon" class="fab fa-whatsapp"></i></button>';
-
-    //
-    const icon = document.getElementById('icon');
-    btn.style.width = '45px';
-    icon.style.marginLeft = '0px';
+function checkVisible(elm) {
+    var rect = elm.getBoundingClientRect();
+    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
   }
 
-  //this code changes the button to round only if the button is scrolled down
-  function scrollOnce() {
-      if(scrolls === 3) {
-          scrolls++;
-          changeButtonRound();
-      } else {
-          scrolls++;
-      }
-  }
+
+doc.onscroll =  function() {
+    const buttonDiv = document.getElementById('btn-div');
+    const check = checkVisible(buttonDiv);
+    if(check === false) {
+        buttonDiv.innerHTML = '<button class="button-side" id="btn"><i class="fab fa-whatsapp"></i></button>'
+        
+    } else {
+        buttonDiv.innerHTML = '<button class="btn" id="btn">Clique aqui  <i class="fab fa-whatsapp"></i></button>'
+
+    }    
+};
